@@ -274,6 +274,23 @@
 (function initI18n() {
   const STORAGE_KEY = 'portfolioLang';
   const select = document.getElementById('lang-select');
+  if (!select) return;
+
+  function safeGetStorage(key) {
+    try {
+      return localStorage.getItem(key);
+    } catch (_) {
+      return null;
+    }
+  }
+
+  function safeSetStorage(key, value) {
+    try {
+      localStorage.setItem(key, value);
+    } catch (_) {
+      // Ignore storage errors (private mode / disabled storage)
+    }
+  }
 
   const translations = {
     en: {
@@ -595,10 +612,10 @@
 
     document.title = dict.pageTitle;
     document.documentElement.lang = safeLang;
-    localStorage.setItem(STORAGE_KEY, safeLang);
+    safeSetStorage(STORAGE_KEY, safeLang);
   }
 
-  const saved = localStorage.getItem(STORAGE_KEY);
+  const saved = safeGetStorage(STORAGE_KEY);
   const browserLang = (navigator.language || 'en').slice(0, 2);
   const initial = translations[saved] ? saved : (translations[browserLang] ? browserLang : 'en');
 
