@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Endale Conti – Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Retro grid canvas background -->
+  <canvas id="grid-canvas"></canvas>
+
+  <!-- ── Navigation ─────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo nav-toggle" role="button" aria-label="Toggle navigation" tabindex="0">EC</span>
+      <ul class="nav-links">
+        <li><a id="nav-about" href="#about">About</a></li>
+        <li><a id="nav-experience" href="#experience">Experience</a></li>
+        <li><a id="nav-skills" href="#skills">Skills</a></li>
+        <li><a id="nav-languages" href="#languages">Languages</a></li>
+        <li><a id="nav-contact" href="#contact">Contact</a></li>
+      </ul>
+      <div class="lang-switch">
+        <label for="lang-select" class="sr-only">Language</label>
+        <select id="lang-select" aria-label="Language selector">
+          <option value="en">EN</option>
+          <option value="de">DE</option>
+          <option value="it">IT</option>
+          <option value="es">ES</option>
+          <option value="fr">FR</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── Header / Hero ───────────────────────────────────────── -->
+  <header id="hero">
+    <div class="hero-content">
+      <p id="hero-greeting" class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name glitch" data-text="Endale Conti">Endale Conti</h1>
+      <p id="hero-subtitle" class="hero-subtitle">Customer Success&nbsp;&bull;&nbsp;Sales&nbsp;&bull;&nbsp;Performance Marketing</p>
+      <a id="hero-cta" href="#contact" class="btn-neon">Get in Touch</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ── About ────────────────────────────────────────────── -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 id="title-about" class="section-title">About Me</h2>
+        <div class="about-card card-glow">
+          <p id="about-text">
+            Internationally experienced Customer Success &amp; Sales Manager with a strong focus on
+            digital advertising, process optimization, and team leadership. I work data-driven,
+            structured, and solution-oriented.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Experience ───────────────────────────────────────── -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 id="title-experience" class="section-title">Experience</h2>
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card card-glow">
+              <span class="timeline-year">2025</span>
+              <h3 id="exp-role-1">Customer Success Manager</h3>
+              <p class="timeline-company">Legal Hero GmbH</p>
+              <p id="exp-desc-1">Communication with lawyers and law firms, documentation and case management, process optimization.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card card-glow">
+              <span class="timeline-year">2021 – 2024</span>
+              <h3 id="exp-role-2">Sales Manager &amp; Brand Manager</h3>
+              <p class="timeline-company">Spare Music</p>
+              <p id="exp-desc-2">Generated over 5M USD for clients, managed B2B advertising, built a recruiting team of 7, data analysis.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card card-glow">
+              <span class="timeline-year">2021 – 2023</span>
+              <h3 id="exp-role-3">Recruiter</h3>
+              <p class="timeline-company">JobSquad</p>
+              <p id="exp-desc-3">Active sourcing, interviews, relocation support, CRM systems.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card card-glow">
+              <span class="timeline-year">2020 – 2021</span>
+              <h3 id="exp-role-4">Team Leader</h3>
+              <p class="timeline-company">Emma GmbH</p>
+              <p id="exp-desc-4">Led Amazon team from 2 to 9 employees, maintained 90%+ customer satisfaction, scheduling, interviews.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card card-glow">
+              <span class="timeline-year">2019 – 2022</span>
+              <h3 id="exp-role-5">Sales Manager &amp; Brand Manager</h3>
+              <p class="timeline-company">Get The Sound</p>
+              <p id="exp-desc-5">Created and managed Google, Facebook, Instagram, and TikTok ads; graphic design; meetings with artists.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card card-glow">
+              <span class="timeline-year">2019 – 2020</span>
+              <h3 id="exp-role-6">Mobility Genius</h3>
+              <p class="timeline-company">Ubeeqo</p>
+              <p id="exp-desc-6">Inbound/outbound support, B2B portfolio management, customer verification, emergency OPS handling.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card card-glow">
+              <span class="timeline-year">2018 – 2019</span>
+              <h3 id="exp-role-7">Sales Specialist</h3>
+              <p class="timeline-company">Facebook / Meta</p>
+              <p id="exp-desc-7">Managed Instagram/Facebook ads, advised 150 B2B clients per quarter, cross-selling, Employee of the Month.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card card-glow">
+              <span class="timeline-year">2016 – 2018</span>
+              <h3 id="exp-role-8">Animateur</h3>
+              <p class="timeline-company">Vita L'Ocio · Acctiv · Sounds Good Animation</p>
+              <p id="exp-desc-8">Team leadership (2–15 people), show management, customer communication, product sales.</p>
+            </div>
+          </div>
+
+        </div><!-- /.timeline -->
+      </div>
+    </section>
+
+    <!-- ── Skills ────────────────────────────────────────────── -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 id="title-skills" class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div id="skill-1" class="skill-badge">Facebook Ads</div>
+          <div id="skill-2" class="skill-badge">TikTok Ads</div>
+          <div class="skill-badge">SAP</div>
+          <div class="skill-badge">Salesforce</div>
+          <div class="skill-badge">Amadeus</div>
+          <div id="skill-6" class="skill-badge">Google Tools</div>
+          <div class="skill-badge">Microsoft 365</div>
+          <div class="skill-badge">Adobe Creative Cloud</div>
+          <div id="skill-9" class="skill-badge">Data Analysis</div>
+          <div id="skill-10" class="skill-badge">Budget Planning</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Languages ─────────────────────────────────────────── -->
+    <section id="languages" class="section">
+      <div class="container">
+        <h2 id="title-languages" class="section-title">Languages</h2>
+        <div class="lang-grid">
+          <div class="lang-card card-glow">
+            <span id="lang-name-1" class="lang-name">German</span>
+            <span id="lang-level-1" class="lang-level">Native</span>
+            <div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div>
+          </div>
+          <div class="lang-card card-glow">
+            <span id="lang-name-2" class="lang-name">English</span>
+            <span id="lang-level-2" class="lang-level">Native</span>
+            <div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div>
+          </div>
+          <div class="lang-card card-glow">
+            <span id="lang-name-3" class="lang-name">Italian</span>
+            <span id="lang-level-3" class="lang-level">Native</span>
+            <div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div>
+          </div>
+          <div class="lang-card card-glow">
+            <span id="lang-name-4" class="lang-name">Spanish</span>
+            <span class="lang-level">C2</span>
+            <div class="lang-bar"><div class="lang-fill" style="width:95%"></div></div>
+          </div>
+          <div class="lang-card card-glow">
+            <span id="lang-name-5" class="lang-name">French</span>
+            <span class="lang-level">C1</span>
+            <div class="lang-bar"><div class="lang-fill" style="width:80%"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Contact ───────────────────────────────────────────── -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 id="title-contact" class="section-title">Contact</h2>
+        <div class="contact-grid">
+          <a class="contact-card card-glow" href="#">
+            <span class="contact-icon">&#128205;</span>
+            <span id="contact-label-1" class="contact-label">Location</span>
+            <span id="contact-value-1" class="contact-value">Berlin, Germany</span>
+          </a>
+          <a class="contact-card card-glow" href="mailto:endaleconti@gmail.com">
+            <span class="contact-icon">&#9993;</span>
+            <span id="contact-label-2" class="contact-label">Email</span>
+            <span class="contact-value">endaleconti@gmail.com</span>
+          </a>
+          <a class="contact-card card-glow" href="tel:+491626450741">
+            <span class="contact-icon">&#128222;</span>
+            <span id="contact-label-3" class="contact-label">Phone</span>
+            <span class="contact-value">+49 162 6450741</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p id="footer-text">&copy; 2026 Endale Conti &mdash; Built with neon &amp; passion.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
