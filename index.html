@@ -14,7 +14,14 @@
   <!-- ── Navigation ─────────────────────────────────────────── -->
   <nav id="navbar">
     <div class="nav-inner">
-      <button class="nav-menu-toggle" type="button" aria-label="Toggle navigation" aria-controls="nav-links" aria-expanded="false">Menu</button>
+      <button class="nav-menu-toggle" type="button" aria-label="Toggle navigation" aria-controls="nav-links" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+        <span class="nav-menu-bars" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
       <span class="nav-logo">EC</span>
       <ul id="nav-links" class="nav-links">
         <li><a id="nav-about" href="#about">About</a></li>

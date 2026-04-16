@@ -99,26 +99,60 @@ a:hover { color: var(--pink); }
   left: 1.5rem;
   top: 50%;
   transform: translateY(-50%);
-  font-family: var(--font-mono);
-  font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--text);
   background: rgba(18, 47, 39, 0.92);
   border: 1px solid rgba(41, 121, 255, 0.35);
   border-radius: 4px;
-  padding: 0.32rem 0.62rem;
+  width: 42px;
+  height: 34px;
+  padding: 0;
   cursor: pointer;
-  transition: color 0.2s, border-color 0.2s, box-shadow 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
 }
 
 .nav-menu-toggle:hover,
 .nav-menu-toggle:focus-visible {
-  color: var(--cyan);
   border-color: rgba(41, 121, 255, 0.65);
   box-shadow: 0 0 10px #2979ff30;
   outline: none;
+}
+
+.nav-menu-bars {
+  width: 16px;
+  height: 12px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-menu-bars span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--text);
+  box-shadow: 0 0 8px rgba(245, 249, 255, 0.18);
+  transition: transform 0.2s ease, opacity 0.2s ease, background 0.2s ease;
+}
+
+.nav-menu-toggle:hover .nav-menu-bars span,
+.nav-menu-toggle:focus-visible .nav-menu-bars span,
+.nav-menu-toggle[aria-expanded='true'] .nav-menu-bars span {
+  background: var(--cyan);
+}
+
+.nav-menu-toggle[aria-expanded='true'] .nav-menu-bars span:nth-child(1) {
+  transform: translateY(5px) rotate(45deg);
+}
+
+.nav-menu-toggle[aria-expanded='true'] .nav-menu-bars span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-menu-toggle[aria-expanded='true'] .nav-menu-bars span:nth-child(3) {
+  transform: translateY(-5px) rotate(-45deg);
 }
 
 .nav-logo {
