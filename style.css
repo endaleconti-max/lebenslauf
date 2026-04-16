@@ -278,7 +278,7 @@ a:hover { color: var(--pink); }
 #hero {
   position: relative;
   z-index: 1;
-  min-height: 88vh;
+  min-height: 78vh;
   display: flex;
   align-items: center;
   justify-content: center;
