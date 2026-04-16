@@ -156,8 +156,8 @@
     highlightNav();
   }, { passive: true });
 
-  /* ── Logo toggle ─────────────────────────────────────────── */
-  const toggle = document.querySelector('.nav-logo');
+  /* ── Menu toggle ─────────────────────────────────────────── */
+  const toggle = document.querySelector('.nav-menu-toggle');
   const links  = document.querySelector('.nav-links');
 
   function setMenuOpen(isOpen) {

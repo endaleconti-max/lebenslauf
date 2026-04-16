@@ -89,9 +89,36 @@ a:hover { color: var(--pink); }
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 0 1.5rem;
   position: relative;
+}
+
+.nav-menu-toggle {
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text);
+  background: rgba(18, 47, 39, 0.92);
+  border: 1px solid rgba(41, 121, 255, 0.35);
+  border-radius: 4px;
+  padding: 0.32rem 0.62rem;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.nav-menu-toggle:hover,
+.nav-menu-toggle:focus-visible {
+  color: var(--cyan);
+  border-color: rgba(41, 121, 255, 0.65);
+  box-shadow: 0 0 10px #2979ff30;
+  outline: none;
 }
 
 .nav-logo {
@@ -105,13 +132,7 @@ a:hover { color: var(--pink); }
   text-shadow: var(--glow-cyan);
   letter-spacing: 0.12em;
   user-select: none;
-  cursor: pointer;
-  pointer-events: all;
-  transition: text-shadow 0.2s;
-}
-
-.nav-logo:hover {
-  text-shadow: var(--glow-cyan), 0 0 36px #2979ff;
+  pointer-events: none;
 }
 
 .lang-switch {
@@ -167,9 +188,9 @@ a:hover { color: var(--pink); }
 .nav-links {
   position: absolute;
   top: var(--nav-h);
-  left: 50%;
-  transform: translate3d(-50%, -8px, 0) scale(0.992);
-  transform-origin: top center;
+  left: 1.5rem;
+  transform: translate3d(0, -8px, 0) scale(0.992);
+  transform-origin: top left;
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -199,7 +220,7 @@ a:hover { color: var(--pink); }
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transform: translate3d(-50%, 0, 0) scale(1);
+  transform: translate3d(0, 0, 0) scale(1);
 }
 
 .nav-links a {
@@ -605,6 +626,10 @@ footer {
 
 /* ── Responsive ───────────────────────────────────────────── */
 @media (max-width: 700px) {
+  .nav-menu-toggle {
+    left: 1rem;
+  }
+
   .lang-switch {
     right: 1rem;
   }
@@ -617,11 +642,12 @@ footer {
   .nav-links {
     width: calc(100vw - 20px);
     max-width: calc(100vw - 20px);
-    transform: translate3d(-50%, -8px, 0) scale(0.995);
+    left: 10px;
+    transform: translate3d(0, -8px, 0) scale(0.995);
   }
 
   .nav-links.open {
-    transform: translate3d(-50%, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
   }
 
   .nav-links li {
