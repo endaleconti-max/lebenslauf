@@ -527,24 +527,25 @@ a:hover { color: var(--pink); }
 }
 
 .skill-badge {
+  background: var(--card-bg);
   padding: 0.6rem 1.4rem;
-  border: 1.5px solid var(--purple);
+  border: 1px solid rgba(41, 121, 255, 0.2);
   border-radius: 100px;
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--purple);
-  text-shadow: var(--glow-purple);
-  box-shadow: 0 0 8px #8ec5ff40, inset 0 0 8px #8ec5ff18;
+  color: var(--text);
+  text-shadow: none;
+  box-shadow: none;
   letter-spacing: 0.06em;
-  transition: background 0.25s, color 0.25s, box-shadow 0.25s;
+  transition: border-color 0.25s, color 0.25s, box-shadow 0.25s, transform 0.25s;
   cursor: default;
 }
 
 .skill-badge:hover {
-  background: var(--purple);
-  color: var(--dark);
-  text-shadow: none;
-  box-shadow: var(--glow-purple);
+  border-color: var(--cyan);
+  color: var(--cyan);
+  box-shadow: 0 0 18px #2979ff35, 0 0 48px #2979ff18;
+  transform: translateY(-3px);
 }
 
 /* ── Languages ────────────────────────────────────────────── */
