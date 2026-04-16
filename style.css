@@ -14,10 +14,10 @@
   --cyan:    #2979ff;
   --purple:  #8ec5ff;
   --yellow:  #b9d8ff;
-  --dark:    #0a1d18;
-  --dark2:   #102922;
-  --dark3:   #17352c;
-  --card-bg: rgba(16, 41, 34, 0.86);
+  --dark:    #0f2821;
+  --dark2:   #1a3a30;
+  --dark3:   #255043;
+  --card-bg: rgba(23, 57, 47, 0.84);
   --text:    #f5f9ff;
   --text-dim:#9fb0c2;
   --nav-h:   64px;
@@ -35,7 +35,7 @@ html {
 
 body {
   font-family: var(--font-main);
-  background: radial-gradient(120% 85% at 50% -10%, rgba(139, 214, 183, 0.08), transparent 58%), linear-gradient(180deg, rgba(10, 29, 24, 0.94), rgba(16, 41, 34, 0.96)), var(--dark);
+  background: radial-gradient(120% 85% at 50% -10%, rgba(148, 235, 197, 0.18), transparent 60%), linear-gradient(180deg, rgba(15, 40, 33, 0.9), rgba(26, 58, 48, 0.92)), var(--dark);
   color: var(--text);
   min-height: 100vh;
   overflow-x: hidden;
@@ -46,7 +46,7 @@ body {
   position: fixed;
   inset: 0;
   z-index: 0;
-  opacity: 0.42;
+  opacity: 0.56;
   pointer-events: none;
 }
 
