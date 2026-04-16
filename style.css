@@ -312,6 +312,7 @@ a:hover { color: var(--pink); }
   color: var(--cyan);
   text-shadow: var(--glow-cyan);
   letter-spacing: 0.06em;
+  white-space: pre-line;
 }
 
 /* Glitch effect */
