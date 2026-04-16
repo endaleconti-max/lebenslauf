@@ -386,6 +386,10 @@ a:hover { color: var(--pink); }
   padding: 6rem 1.5rem;
 }
 
+#about.section {
+  padding-top: 3rem;
+}
+
 .container {
   max-width: 1000px;
   margin: 0 auto;
