@@ -519,15 +519,18 @@ a:hover { color: var(--pink); }
 
 /* ── Skills ───────────────────────────────────────────────── */
 .skills-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
-  justify-content: center;
 }
 
 .skill-badge {
   background: var(--card-bg);
-  padding: 0.6rem 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 58px;
+  padding: 0.85rem 1.1rem;
   border: 1px solid rgba(41, 121, 255, 0.2);
   border-radius: 6px;
   font-size: 0.875rem;
@@ -536,6 +539,7 @@ a:hover { color: var(--pink); }
   text-shadow: none;
   box-shadow: none;
   letter-spacing: 0.06em;
+  text-align: center;
   transition: border-color 0.25s, color 0.25s, box-shadow 0.25s, transform 0.25s;
   cursor: default;
 }
