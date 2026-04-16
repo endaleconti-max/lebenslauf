@@ -386,10 +386,6 @@ a:hover { color: var(--pink); }
   padding: 6rem 1.5rem;
 }
 
-.section:nth-child(even) {
-  background: rgba(70, 45, 20, 0.35);
-}
-
 .container {
   max-width: 1000px;
   margin: 0 auto;
