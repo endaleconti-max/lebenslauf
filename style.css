@@ -439,7 +439,6 @@ a:hover { color: var(--pink); }
   max-width: 760px;
   margin: 0 auto;
   text-align: center;
-  border-color: rgba(41, 121, 255, 0.3);
 }
 
 /* ── Timeline ─────────────────────────────────────────────── */
@@ -530,7 +529,7 @@ a:hover { color: var(--pink); }
   background: var(--card-bg);
   padding: 0.6rem 1.4rem;
   border: 1px solid rgba(41, 121, 255, 0.2);
-  border-radius: 100px;
+  border-radius: 6px;
   font-size: 0.875rem;
   font-weight: 600;
   color: var(--text);
