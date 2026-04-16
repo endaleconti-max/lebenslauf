@@ -550,6 +550,38 @@
     }
   };
 
+  // Keep CV content consistent across language switches.
+  const cvUpdates = {
+    heroSubtitle: 'Customer Success Manager • B2B Communication • Process Optimization',
+    aboutText: 'Experienced Customer Success Manager with a strong background in B2B communication, process optimization, and CRM systems. Multilingual and specialized in structured customer support, technical communication, and efficient workflow design.',
+    expRole1: 'Customer Success Manager',
+    expDesc1: 'Communication with lawyers and law firms, documentation and case management, process optimization, resource planning, and coordination between internal departments.',
+    expRole2: 'Sales Manager / Brand Manager',
+    expDesc2: 'Managed advertising for B2B clients, handled budget planning and data analysis, built and coordinated teams, and generated over 5M USD in revenue.',
+    expRole3: 'Recruiter',
+    expDesc3: 'Recruitment through social platforms, candidate interviews, relocation support, and CRM-based applicant management.',
+    expRole4: 'Team Leader',
+    expDesc4: 'Led a 9-person team, managed operations and scheduling, and maintained customer satisfaction above 90%.',
+    expRole5: 'Additional Experience',
+    expDesc5: 'Further professional experience details are available on request.',
+    expRole6: 'Additional Experience',
+    expDesc6: 'Further professional experience details are available on request.',
+    expRole7: 'Additional Experience',
+    expDesc7: 'Further professional experience details are available on request.',
+    expRole8: 'Additional Experience',
+    expDesc8: 'Further professional experience details are available on request.',
+    skill1: 'CRM: Salesforce',
+    skill2: 'CRM: SAP',
+    skill6: 'Google Business Tools',
+    skill9: 'Technical Communication',
+    skill10: 'Workflow Design',
+    contactValue1: 'Berlin, Deutschland'
+  };
+
+  Object.keys(translations).forEach((lang) => {
+    Object.assign(translations[lang], cvUpdates);
+  });
+
   const elementMap = {
     navAbout: 'nav-about',
     navExperience: 'nav-experience',
