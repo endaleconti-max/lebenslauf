@@ -14,10 +14,10 @@
   --cyan:    #2979ff;
   --purple:  #8ec5ff;
   --yellow:  #b9d8ff;
-  --dark:    #031912;
-  --dark2:   #05261d;
-  --dark3:   #083328;
-  --card-bg: rgba(10, 41, 31, 0.88);
+  --dark:    #0a1d18;
+  --dark2:   #102922;
+  --dark3:   #17352c;
+  --card-bg: rgba(16, 41, 34, 0.86);
   --text:    #f5f9ff;
   --text-dim:#9fb0c2;
   --nav-h:   64px;
@@ -35,7 +35,7 @@ html {
 
 body {
   font-family: var(--font-main);
-  background: radial-gradient(120% 85% at 50% -10%, rgba(0, 255, 170, 0.12), transparent 58%), linear-gradient(180deg, rgba(3, 25, 18, 0.94), rgba(5, 38, 29, 0.96)), var(--dark);
+  background: radial-gradient(120% 85% at 50% -10%, rgba(139, 214, 183, 0.08), transparent 58%), linear-gradient(180deg, rgba(10, 29, 24, 0.94), rgba(16, 41, 34, 0.96)), var(--dark);
   color: var(--text);
   min-height: 100vh;
   overflow-x: hidden;
@@ -46,7 +46,7 @@ body {
   position: fixed;
   inset: 0;
   z-index: 0;
-  opacity: 0.52;
+  opacity: 0.42;
   pointer-events: none;
 }
 
@@ -72,7 +72,7 @@ a:hover { color: var(--pink); }
   right: 0;
   height: var(--nav-h);
   z-index: 100;
-  background: rgba(6, 33, 25, 0.75);
+  background: rgba(15, 40, 33, 0.68);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(41, 121, 255, 0.22);
@@ -80,7 +80,7 @@ a:hover { color: var(--pink); }
 }
 
 #navbar.scrolled {
-  background: rgba(6, 33, 25, 0.97);
+  background: rgba(15, 40, 33, 0.9);
 }
 
 .nav-inner {
@@ -124,7 +124,7 @@ a:hover { color: var(--pink); }
 .lang-switch select {
   appearance: none;
   -webkit-appearance: none;
-  background: rgba(8, 43, 32, 0.96);
+  background: rgba(18, 47, 39, 0.92);
   color: var(--text);
   border: 1px solid rgba(41, 121, 255, 0.35);
   border-radius: 4px;
@@ -174,7 +174,7 @@ a:hover { color: var(--pink); }
   flex-direction: column;
   gap: 0;
   list-style: none;
-  background: rgba(8, 43, 32, 0.98);
+  background: rgba(18, 47, 39, 0.94);
   border: 1px solid rgba(41, 121, 255, 0.22);
   border-top: none;
   width: 260px;

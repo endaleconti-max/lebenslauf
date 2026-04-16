@@ -14,7 +14,7 @@
   const V_LINES     = 18;     // number of vertical lines
   const H_LINES     = 14;     // number of horizontal bands
   const SPEED       = 0.004;  // scroll speed (0–1 per frame)
-  const COLOR_GRID  = 'rgba(0, 255, 163, 0.28)';
+  const COLOR_GRID  = 'rgba(126, 202, 172, 0.2)';
 
   let offset = 0; // animated scroll offset 0..1
 
@@ -32,22 +32,22 @@
 
     /* ── Sky gradient ──────────────────────────────────────── */
     const skyGrad = ctx.createLinearGradient(0, 0, 0, horizonY);
-    skyGrad.addColorStop(0,   'rgba(3, 25, 18, 0)');
-    skyGrad.addColorStop(1,   'rgba(12, 74, 54, 0.22)');
+    skyGrad.addColorStop(0,   'rgba(10, 29, 24, 0)');
+    skyGrad.addColorStop(1,   'rgba(30, 78, 62, 0.16)');
     ctx.fillStyle = skyGrad;
     ctx.fillRect(0, 0, W, horizonY);
 
     /* ── Floor gradient ────────────────────────────────────── */
     const floorGrad = ctx.createLinearGradient(0, horizonY, 0, H);
-    floorGrad.addColorStop(0, 'rgba(0, 255, 163, 0.10)');
-    floorGrad.addColorStop(1, 'rgba(0, 160, 112, 0.06)');
+    floorGrad.addColorStop(0, 'rgba(126, 202, 172, 0.08)');
+    floorGrad.addColorStop(1, 'rgba(88, 154, 130, 0.05)');
     ctx.fillStyle = floorGrad;
     ctx.fillRect(0, horizonY, W, floorH);
 
     /* ── Glow at horizon ───────────────────────────────────── */
     const glowGrad = ctx.createLinearGradient(0, horizonY - 60, 0, horizonY + 60);
     glowGrad.addColorStop(0,   'transparent');
-    glowGrad.addColorStop(0.5, 'rgba(0, 255, 163, 0.12)');
+    glowGrad.addColorStop(0.5, 'rgba(139, 214, 183, 0.09)');
     glowGrad.addColorStop(1,   'transparent');
     ctx.fillStyle = glowGrad;
     ctx.fillRect(0, horizonY - 60, W, 120);
@@ -92,9 +92,9 @@
     const sunR  = Math.min(W, H) * 0.09;
     const sunY  = horizonY;
     const sunGrad = ctx.createRadialGradient(vp.x, sunY, 0, vp.x, sunY, sunR * 2.4);
-    sunGrad.addColorStop(0,    'rgba(226, 255, 244, 0.78)');
-    sunGrad.addColorStop(0.18, 'rgba(0, 255, 163, 0.52)');
-    sunGrad.addColorStop(0.45, 'rgba(0, 153, 110, 0.24)');
+    sunGrad.addColorStop(0,    'rgba(230, 248, 240, 0.65)');
+    sunGrad.addColorStop(0.18, 'rgba(139, 214, 183, 0.38)');
+    sunGrad.addColorStop(0.45, 'rgba(88, 154, 130, 0.2)');
     sunGrad.addColorStop(1,    'transparent');
     ctx.fillStyle = sunGrad;
     ctx.beginPath();
@@ -107,11 +107,11 @@
     ctx.arc(vp.x, sunY, sunR, Math.PI, 0);
     ctx.closePath();
     const halfGrad = ctx.createLinearGradient(vp.x - sunR, sunY - sunR, vp.x + sunR, sunY);
-    halfGrad.addColorStop(0, '#e4fff4');
-    halfGrad.addColorStop(1, '#00ffa3');
+    halfGrad.addColorStop(0, '#e8f6ef');
+    halfGrad.addColorStop(1, '#8bd6b7');
     ctx.fillStyle = halfGrad;
     ctx.shadowBlur  = 40;
-    ctx.shadowColor = '#00ffa3';
+    ctx.shadowColor = '#8bd6b7';
     ctx.fill();
 
     // Horizontal stripes over lower half
